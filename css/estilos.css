@@ -116,10 +116,11 @@ header .hero .img-web img{
 /*SECTION DESCRIPCION*/
 
 main.descripcion{
-    background-image: url(../imgs/pexels-felix-mittermeier-956999\ \(1\).jpg);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(23, 1, 27) 0%, rgb(104, 4, 129) 35%, rgb(174, 0, 255) 100%);
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    height: 120vh;
+    height: 80vh;
     max-width: 100%;
     display: flex;
     flex-direction: row;
@@ -137,13 +138,21 @@ main.descripcion .imagen-luis{
     position: relative;
     border-radius: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+main.descripcion .circulo{
+    height: 150px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+}
+
 main.descripcion .logo{
-    height: 30vh;
-    width: 75%;
+    height: 28vh;
+    width: 71%;
     position: absolute;
     background: url(../imgs/imagen-luis.jpeg);
     background-size: cover;
@@ -153,9 +162,10 @@ main.descripcion .logo{
 
 main.descripcion .text-imagen{
     position: absolute;
-    color: rgb(231, 113, 16);
-    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 21px;
     font-family: 'Lato', sans-serif;
+    font-weight: 700;
     width: 100%;
     height: 100%;
     animation: rotateText 10s linear infinite;
@@ -177,7 +187,7 @@ main.descripcion .text-imagen span{
     position: absolute;
     left: 50%;
     font-size: 1.2em;
-    transform-origin: 0 185px;
+    transform-origin: 0 170px;
 }
 
 main.descripcion .wrapper-luis{
@@ -188,18 +198,12 @@ main.descripcion .wrapper-luis{
 }
 
 main.descripcion .container-luis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
     width: 90%;
-    height: 50vh;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 110, 255) 100%);
-    border-radius: 20px;
-    opacity: 0.8;
-    margin: 30px;
-}
-
-main.descripcion .map-luis{
-    width: 90%;
-    height: 50vh;
+    height: 60vh;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 110, 255) 100%);
     border-radius: 20px;
@@ -210,14 +214,65 @@ main.descripcion .map-luis{
 
 main .container-luis h1{
     font-size: 60px;
+    background: -webkit-linear-gradient(rgb(191, 186, 199), rgb(230, 233, 220));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: white;
     text-align: center;
 }
 
-main .container-luis h2{
-    font-size: 40px;
+main .skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+main .skill-name{
+    font-size: 18px;
     color: white;
-    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+main .skill-bar{
+    height: 20px;
+    background: grey;
+    border-radius: 8px;
+}
+
+main .skill-per{
+    height: 20px;
+    background-color: aqua;
+    border-radius: 8px;
+    width: 0%;
+    transition: 1s linear;
+    position: relative;
+}
+
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    background-color: black;
+    top: -16px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
 }
 
 main .container-luis .contact{
@@ -230,6 +285,7 @@ main .container-luis .contact{
 
 main .container-luis .contact a{
     text-decoration: none;
+    font-size: 30px;
     color: white;
     border: 2px solid white;
     padding: 10px;
