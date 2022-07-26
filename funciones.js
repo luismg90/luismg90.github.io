@@ -1,11 +1,13 @@
 console.log("funciones cargadas");
 
+/*Funcion de texto giratorio*/
 const text = document.querySelector('.text-imagen p');
 text.innerHTML = text.innerText.split("").map(
     (char, i) =>
     `<span style="transform:rotate(${i * 8}deg)">${char}</span>`
 ).join("")
 
+/*Funcion de tabla con skills */
 $('.skill-per').each(function(){
     var $this = $(this);
     var per = $this.attr('per');
