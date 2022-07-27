@@ -77,6 +77,12 @@ header .hero .dev-location h1{
     margin: 0;
 }
 
+header .hero .dev-location h1:hover{
+
+}
+
+
+
 header .hero .dev-location p{
     font-size: 40px;
     background: -webkit-linear-gradient(rgb(75, 12, 158), rgb(83, 4, 83));
@@ -205,7 +211,7 @@ main.descripcion .cuadro-experiencia{
     font-size: 20px;
     color: honeydew;
     height: 60vh;
-    width: 100%;
+    max-width: 100%;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 110, 255) 100%);
     display: flex;
@@ -224,6 +230,13 @@ main.descripcion .cuadro-experiencia .col-exp{
     border-radius: 12px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    transition: transform 0.5s;
+}
+
+main.descripcion .col-exp:hover{
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 main.descripcion .cuadro-experiencia .col-exp:first-child{
@@ -288,7 +301,7 @@ main.descripcion .container-luis{
     flex-direction: column;
     align-items: center;
     justify-content: unset;
-    width: 90%;
+    max-width: 100%;
     height: 60vh;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 110, 255) 100%);
@@ -397,3 +410,52 @@ main .container-luis .contact a.btn-secondary:hover{
 }
 
 
+/*MEDIA QUERIES*/
+
+
+
+@media screen and (min-width: 1200px) {
+
+/*HEADER*/
+
+    header{
+        height: 60vh;
+    }
+
+    header .hero .img-web{
+        width: 60%;
+        padding-right: 30px;
+    }
+
+/*SECCION DESCRIPCION*/
+
+    main.descripcion .wrapper-luis{
+        width: 45%;
+    }
+
+    main.descripcion .container-luis{
+        height: 68vh;
+    }
+
+    main .skills{
+        margin-bottom: 20px;
+    }
+
+    main.descripcion .columna-informacion{
+        height: 68vh;
+        width: 55%;
+    }
+
+    main.descripcion .logo{
+        width: 65%;
+    }
+
+    main.descripcion .text-imagen{
+        height: 111%;
+    }
+
+    main.descripcion .cuadro-experiencia{
+        height: 45vh;
+    }
+
+}
