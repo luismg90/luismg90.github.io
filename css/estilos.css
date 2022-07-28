@@ -4,16 +4,19 @@
 
 body{
     margin: 0;
-    background-color: rgb(112, 97, 243);
+    background-color: rgb(255, 255, 255);
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 /*HEADER*/
 
 header{
-    background-image: url(../imgs/milad-fakurian-E8Ufcyxz514-unsplash.jpg);
-    height: 80vh;
-    margin: 50px;
-    border-radius: 10px;
+    background-image: url(../imgs/andras-vas-PPXG_aN4IOo-unsplash.jpg);
+    height: 90vh;
+    background-size: contain;
 }
 
 header .navbar{
@@ -51,6 +54,23 @@ header .navbar .nav-links a{
     border-radius: 15px;
 }
 
+header #especializaciones{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+header #especializaciones .cuadro-icon{
+    font-size: 50px;
+    background: -webkit-linear-gradient(rgb(75, 12, 158), rgb(236, 92, 236));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 30px;
+}
+
+
 /*HERO*/
 
 header .hero{
@@ -65,36 +85,34 @@ header .hero .dev-location{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
+    height: 45vh;
 }
 
 header .hero .dev-location h1{
     font-size: 80px;
-    background: -webkit-linear-gradient(rgb(75, 12, 158), rgb(83, 4, 83));
+    background: -webkit-linear-gradient(rgb(75, 12, 158), rgb(236, 92, 236));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
     margin: 0;
 }
 
-header .hero .dev-location h1:hover{
-
-}
-
-
-
 header .hero .dev-location p{
     font-size: 40px;
-    background: -webkit-linear-gradient(rgb(75, 12, 158), rgb(83, 4, 83));
+    background: -webkit-linear-gradient(rgb(75, 12, 158), rgb(236, 92, 236));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: white;
     text-align: center;
+    margin: 10px;
 }
 
 header .hero .dev-location .btn-dev{
     text-decoration: none;
-    color: blueviolet;
+    background: -webkit-linear-gradient(rgb(75, 12, 158), rgb(236, 92, 236));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     border: 2px solid white;
     border-radius: 10px;
     padding: 8px 25px;
@@ -109,21 +127,16 @@ header .hero .dev-location .btn-dev:hover{
     transition: all 0.5s ease-in-out;
 }
 
-header .hero .img-web{
-    width: 50%;
-    padding: 50px;
-}
 
-header .hero .img-web img{
-    width: 100%;
-    border-radius: 10px;
-}
+
+
 
 /*SECTION DESCRIPCION*/
 
 main.descripcion{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgb(23, 1, 27) 0%, rgb(104, 4, 129) 35%, rgb(174, 0, 255) 100%);
+    background-image: linear-gradient(-60deg, rgb(42, 6, 99) 50%, rgba(10, 25, 233, 0.5) 50%);
+    animation:slide 3s ease-in-out infinite alternate;
+    background-position: center;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     height: 80vh;
@@ -132,8 +145,8 @@ main.descripcion{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 50px;
-    border-radius: 10px;
+    background-size: cover;
+
 }
 
 main.descripcion .imagen-luis{
@@ -212,8 +225,7 @@ main.descripcion .cuadro-experiencia{
     color: honeydew;
     height: 60vh;
     max-width: 100%;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 110, 255) 100%);
+    background:transparent;
     display: flex;
     flex-direction: row;
     border-radius: 40px;
@@ -222,9 +234,8 @@ main.descripcion .cuadro-experiencia{
 
 main.descripcion .cuadro-experiencia .col-exp{
     height: 30vh;
-    width: 33.33%;
-    background-color: #FF3CAC;
-    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    width: 33.33%; 
+    background: #3f393996;
     margin: 14px;
     text-align: center;
     border-radius: 12px;
@@ -240,7 +251,7 @@ main.descripcion .col-exp:hover{
 }
 
 main.descripcion .cuadro-experiencia .col-exp:first-child{
-    text-align: left;
+    text-align: center;
     padding: 5px;
     font-size: 14px;
 }
@@ -303,16 +314,15 @@ main.descripcion .container-luis{
     justify-content: unset;
     max-width: 100%;
     height: 60vh;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 110, 255) 100%);
+    background: transparent;
     border-radius: 20px;
     opacity: 0.8;
     margin: 30px;
 }
 
 
-main .container-luis h1{
-    font-size: 60px;
+main .container-luis h2{
+    font-size: 20px;
     background: -webkit-linear-gradient(rgb(191, 186, 199), rgb(230, 233, 220));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -328,7 +338,7 @@ main .skills{
 }
 
 main .skill-name{
-    font-size: 18px;
+    font-size: 14px;
     color: white;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -414,12 +424,13 @@ main .container-luis .contact a.btn-secondary:hover{
 
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
 
 /*HEADER*/
 
     header{
-        height: 60vh;
+        height: 90vh;
+        background-position: center;
     }
 
     header .hero .img-web{
@@ -434,7 +445,7 @@ main .container-luis .contact a.btn-secondary:hover{
     }
 
     main.descripcion .container-luis{
-        height: 68vh;
+        height: 28vh;
     }
 
     main .skills{
