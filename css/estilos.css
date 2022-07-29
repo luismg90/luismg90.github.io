@@ -182,9 +182,7 @@ main.descripcion .logo{
 main.descripcion .text-imagen{
     position: absolute;
     color: rgb(255, 255, 255);
-    font-size: 21px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-size: 22px;
     width: 100%;
     height: 140%;
     animation: rotateText 10s linear infinite;
@@ -207,6 +205,8 @@ main.descripcion .text-imagen span{
     left: 50%;
     font-size: 1.2em;
     transform-origin: 0 170px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 /*Parte cuadro columna-informacion*/
@@ -239,8 +239,8 @@ main.descripcion .cuadro-experiencia .col-exp{
     margin: 14px;
     text-align: center;
     border-radius: 12px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
     transition: transform 0.5s;
 }
 
@@ -258,6 +258,12 @@ main.descripcion .cuadro-experiencia .col-exp:first-child{
 
 main.descripcion .cuadro-experiencia .col-exp h2:first-child{
     text-align: center;
+
+}
+
+main.descripcion .cuadro-experiencia .col-exp h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
 }
 
 main.descripcion .cuadro-experiencia .col-exp h2{
@@ -420,6 +426,104 @@ main .container-luis .contact a.btn-secondary:hover{
 }
 
 
+/*FOOTER*/
+
+footer .f-background{
+    width: 100%;
+    height: 60vh;
+    background-color: #c3bee7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .f-main{
+    background-image: url(../imgs/—Pngtree—geometric\ purple\ background\ with\ modern_1243070.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 80%;
+    border: 2px solid black;
+}
+
+footer .f-partner{
+    display: flex;
+    height: 15vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .f-partner h2{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+}
+
+footer .f-partner p{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+footer .f-partner .btn-dev{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border: 2px outset white;
+    padding: 12px;
+    color: white;
+    border-radius: 20px;
+}
+
+
+footer .f-social h2{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    text-align: center;
+}
+
+footer .f-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .f-social .f-iconos{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+}
+
+footer .f-social .f-iconos i{
+    font-size: 50px;
+    background: -webkit-linear-gradient(rgb(75, 12, 158), rgb(236, 92, 236));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer .f-privacy{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 60px;
+}
+
+
+
 /*MEDIA QUERIES*/
 
 
@@ -467,6 +571,10 @@ main .container-luis .contact a.btn-secondary:hover{
 
     main.descripcion .cuadro-experiencia{
         height: 45vh;
+    }
+
+    main .container-luis .contact a{
+        font-size: 20px;
     }
 
 }
