@@ -14,7 +14,8 @@ html{
 /*HEADER*/
 
 header{
-    background-image: url(../imgs/andras-vas-PPXG_aN4IOo-unsplash.jpg);
+    background-color: #06b4b7;
+    background-image: linear-gradient(315deg, #06b4b7 0%, #7200dc 100%);
     height: 90vh;
     background-size: contain;
 }
@@ -59,7 +60,7 @@ header #especializaciones{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 500px;
 }
 
 header #especializaciones .cuadro-icon{
@@ -86,47 +87,21 @@ header .hero .dev-location{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 45vh;
-}
-
-header .hero .dev-location h1{
-    font-size: 80px;
-    background: -webkit-linear-gradient(rgb(75, 12, 158), rgb(236, 92, 236));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    margin: 0;
-}
-
-header .hero .dev-location p{
-    font-size: 40px;
-    background: -webkit-linear-gradient(rgb(75, 12, 158), rgb(236, 92, 236));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: white;
-    text-align: center;
-    margin: 10px;
-}
-
-header .hero .dev-location .btn-dev{
-    text-decoration: none;
-    background: -webkit-linear-gradient(rgb(75, 12, 158), rgb(236, 92, 236));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 700px;
     border: 2px solid white;
-    border-radius: 10px;
-    padding: 8px 25px;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
+    position: relative;
 }
 
-header .hero .btn-dev:hover{
-    background-color: white;
-    transition: all 0.5s ease-in-out;
+header .hero .dev-location .dev-nav{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: yellow;
+    top: 0;
+    right: 0;
 }
-
 
 
 
@@ -139,7 +114,7 @@ main.descripcion{
     background-position: center;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    height: 80vh;
+    min-height: 80vh;
     max-width: 100%;
     display: flex;
     flex-direction: row;
@@ -151,8 +126,8 @@ main.descripcion{
 
 main.descripcion .imagen-luis{
     /* background-color: grey; */
-    height: 40vh;
-    width: 65%;
+    height: 250px;
+    width: 250px;
     margin: 30px;
     position: relative;
     border-radius: 50%;
@@ -170,8 +145,8 @@ main.descripcion .circulo{
 }
 
 main.descripcion .logo{
-    height: 22vh;
-    width: 71%;
+    height: 100%;
+    width: 100%;
     position: absolute;
     background: url(../imgs/imagen-luis.jpeg);
     background-size: cover;
@@ -184,8 +159,12 @@ main.descripcion .text-imagen{
     color: rgb(255, 255, 255);
     font-size: 22px;
     width: 100%;
-    height: 140%;
+    height: 100%;
     animation: rotateText 10s linear infinite;
+}
+main.descripcion .text-imagen p{
+    position: relative;
+    top: -26%;
 }
 
 @keyframes rotateText
@@ -216,14 +195,12 @@ main.descripcion .columna-informacion{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
     width: 40%;
 }
 
 main.descripcion .cuadro-experiencia{
     font-size: 20px;
     color: honeydew;
-    height: 60vh;
     max-width: 100%;
     background:transparent;
     display: flex;
@@ -233,7 +210,7 @@ main.descripcion .cuadro-experiencia{
 }
 
 main.descripcion .cuadro-experiencia .col-exp{
-    height: 30vh;
+    height: 300px;
     width: 33.33%; 
     background: #3f393996;
     margin: 14px;
@@ -319,7 +296,7 @@ main.descripcion .container-luis{
     align-items: center;
     justify-content: unset;
     max-width: 100%;
-    height: 60vh;
+    height: 500px;
     background: transparent;
     border-radius: 20px;
     opacity: 0.8;
@@ -440,7 +417,7 @@ section.wrapper-servicios{
 
 section .servicios-luis{
     display: flex;
-    height: 70vh;
+    height: 600px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -452,7 +429,7 @@ section .servicios-luis h2{
 }
 
 section .servicios-luis .contenedor-servicios{
-    height: 60vh;
+    height: 500px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -461,7 +438,7 @@ section .servicios-luis .contenedor-servicios{
 
 section .servicios-luis .contenedor-servicios .servicio{
     text-align: center;
-    height: 50vh;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -473,7 +450,7 @@ section .servicios-luis .contenedor-servicios .servicio h3{
 }
 
 section .servicios-luis .contenedor-servicios .servicio .imagen-servicio{
-    height: 30vh;
+    height: 300px;
 }
 
 section .servicios-luis .contenedor-servicios .servicio img{
@@ -640,7 +617,7 @@ footer .f-partner .f-campos .btn-cont:hover{
 
 /*HEADER*/
 
-    header{
+    /* header{
         height: 90vh;
         background-position: center;
     }
@@ -648,11 +625,11 @@ footer .f-partner .f-campos .btn-cont:hover{
     header .hero .img-web{
         width: 60%;
         padding-right: 30px;
-    }
+    } */
 
 /*SECCION DESCRIPCION*/
 
-    main.descripcion .wrapper-luis{
+    /* main.descripcion .wrapper-luis{
         width: 45%;
     }
 
@@ -683,6 +660,6 @@ footer .f-partner .f-campos .btn-cont:hover{
 
     main .container-luis .contact a{
         font-size: 20px;
-    }
+    } */
 
 }

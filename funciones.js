@@ -22,3 +22,5 @@ $('.skill-per').each(function(){
         }
     });
 });
+
+// Funcion para recibir correos de email.js
