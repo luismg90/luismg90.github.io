@@ -15,8 +15,9 @@ html{
 
 header{
     background-color: #06b4b7;
-    background-image: linear-gradient(315deg, #06b4b7 0%, #7200dc 100%);
-    height: 90vh;
+    background-image: linear-gradient(315deg, #0f6768 0%, #7200dc 100%);
+    min-height: 80vh;
+    max-width: 100%;
     background-size: contain;
 }
 
@@ -57,19 +58,13 @@ header .navbar .nav-links a{
 
 header #especializaciones{
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
+    z-index: 1;
+    top: 90px;
+    left: -150px;
+    position: relative;
 }
 
-header #especializaciones .cuadro-icon{
-    font-size: 50px;
-    background: -webkit-linear-gradient( rgb(4, 99, 136),rgb(3, 9, 65));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 30px;
-}
+
 
 
 /*HERO*/
@@ -80,6 +75,7 @@ header .hero{
     align-items: center;
     font-family: 'Lato', sans-serif;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 header .hero .dev-location{
@@ -90,10 +86,8 @@ header .hero .dev-location{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 50px;
     height: 700px;
-    border: 2px solid white;
     position: relative;
 }
 
@@ -103,25 +97,41 @@ header .hero .dev-location video{
     position: absolute;
     object-fit: cover;
     z-index: 0;
+    margin-bottom: 50px;
 }
 
 header .hero .dev-location h1{
     font-size: 70px;
     z-index: 1;
     top: 0;
-    left: -250px;
+    left: -202px;
     position: relative;
     text-align: left;
     color: white;
     padding: 10px;
     margin: 0;
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 header .hero .dev-location h2{
-    font-size: 30px;
+    font-size: 100px;
     z-index: 1;
-    top: 0;
+    top: -50px;
+    left: -220px;
+    position: relative;
+    text-align: left;
+    background: -webkit-linear-gradient( rgb(255 255 255),rgb(237 237 237));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+    margin: 0;
+    font-family: 'Bebas Neue';
+}
+
+header .hero .dev-location h3{
+    font-size: 40px;
+    z-index: 1;
+
     left: -250px;
     position: relative;
     text-align: left;
@@ -129,6 +139,7 @@ header .hero .dev-location h2{
     padding: 10px;
     margin: 0;
     font-family: 'Bebas Neue';
+    transform: rotate(270deg);
 }
 
 header .hero .dev-location .dev-nav{
@@ -137,15 +148,13 @@ header .hero .dev-location .dev-nav{
     justify-content: center;
     align-items: flex-start;
     position: absolute;
-    height: 400px;
-    width: 400px;
-    background-color: yellow;
     top: 0;
     right: 0;
+    margin: 25px;
 }
 
 header .hero .dev-location .dev-nav a{
-    font-size: 25px;
+    font-size: 20px;
     padding: 10px;
     margin-left: 20px;
     text-decoration: none;
@@ -155,7 +164,10 @@ header .hero .dev-location .dev-nav a{
 header .hero .dev-location .dev-nav .under-animation{
     display: inline-block;
     position: relative;
-    color: black;
+    background: -webkit-linear-gradient( rgb(255 255 255),rgb(237 237 237));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Lato', sans-serif;
 }
 
 header .hero .dev-location .dev-nav .under-animation:after{
@@ -166,7 +178,7 @@ header .hero .dev-location .dev-nav .under-animation:after{
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color: white;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -174,6 +186,14 @@ header .hero .dev-location .dev-nav .under-animation:after{
 header .hero .dev-location .dev-nav .under-animation:hover:after{
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+header #especializaciones .cuadro-icon{
+    font-size: 40px;
+    background: -webkit-linear-gradient( rgb(255 255 255),rgb(3, 9, 65));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
 }
 
 
@@ -355,6 +375,10 @@ main.descripcion .cuadro-experiencia .col-exp span:last-child{
     margin-left: 0;
 }
 
+main.descripcion .cuadro-experiencia .col-exp p{
+    font-size: 15px;
+}
+
 
 
 main.descripcion .wrapper-luis{
@@ -379,19 +403,19 @@ main.descripcion .container-luis{
 
 
 main .container-luis h2{
-    font-size: 20px;
-    background: -webkit-linear-gradient(rgb(191, 186, 199), rgb(230, 233, 220));
+    font-size: 60px;
+    background: -webkit-linear-gradient( rgb(255 255 255),rgb(237 237 237));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: white;
     text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 main .skills{
     width: 100%;
     max-width: 600px;
     padding: 0 20px;
-    margin: 50px;
 }
 
 main .skill-name{
@@ -452,7 +476,7 @@ main .container-luis .contact{
 
 main .container-luis .contact a{
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     border: 2px solid white;
     padding: 10px;
@@ -548,14 +572,13 @@ footer .f-main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
     width: 95%;
     border: 2px solid black;
+    margin: 40px
 }
 
 footer .f-partner{
     display: flex;
-    height: 40vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -577,8 +600,6 @@ footer .f-partner p{
     text-align: center;
     font-size: 25px;
 }
-
-
 
 
 footer .f-social h2{
@@ -622,7 +643,6 @@ footer .f-privacy{
 
 footer .f-campos{
     width: 80%;
-    height: 32vh;
     display: flex;
     flex-direction: column;
     border: 2px solid white;
@@ -690,11 +710,11 @@ footer .f-partner .f-campos .btn-cont:hover{
 @media screen and (max-width: 1200px) {
 
     header .hero .dev-location{
-        height: 500px;
+        height: 600px;
     }
 
-    header .hero .dev-location h1{
-        font-size: 50px;
+    header .hero .dev-location h2{
+        font-size: 80px;
     }
 
     header .hero .dev-location .dev-nav .under-animation{
