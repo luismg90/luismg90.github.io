@@ -51,38 +51,66 @@ header .hero .dev-location{
 }
 
 header .hero #hero-text{
-    width: 100%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+header .hero #hero-text p{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+}
+
 
 header .hero #hero-text h1{
     font-size: 83px;
     color: black;
     font-weight: 700;
     font-family: 'Playfair Display', serif;
+    margin: 0;
 }
 
 header .hero #hero-text h2{
     font-size: 40px;
     color: grey;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 header .hero #hero-text h3{
     font-size: 20px;
     color: black;
     font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 300;
 }
 
 header .hero #hero-text h4{
     font-size: 20px;
     color: black;
     font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 300;
+}
+
+header .hero #hero-text .btn-dev{
+    width: 30%;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 1s;
+    margin: 20px;
+}
+
+header .hero #hero-text .btn-dev:hover{
+    transform: scale(1.1);
+    transition: all 0.5 ease-in-out;
+    transition-duration: 0.5s;
 }
 
 header .hero .dev-location .dev-nav{
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,6 +161,16 @@ header #especializaciones .cuadro-icon{
     padding: 10px;
 }
 
+header .hero .dev-location .hero-imagen{
+    width: 40%;
+}
+
+header .hero .dev-location .hero-imagen img{
+    width: 70%;
+    border-radius: 200px;
+}
+
+
 
 
 
@@ -141,7 +179,6 @@ header #especializaciones .cuadro-icon{
 main.descripcion{
     background-color: #f7eee6;
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
     min-height: 80vh;
     max-width: 100%;
     display: flex;
@@ -237,7 +274,6 @@ main.descripcion .cuadro-experiencia{
 }
 
 main.descripcion .cuadro-experiencia .col-exp{
-    height: 300px;
     width: 33.33%; 
     background: #3f393996;
     margin: 14px;
@@ -343,15 +379,17 @@ main .container-luis h1{
 
 main .container-luis h2{
     font-size: 30px;
-    color: black;
     text-align: center;
     font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 main .container-luis p{
     font-size: 30px;
     font-family: 'Lato', sans-serif;
-    font-weight: 100;
+    font-weight: 400;
+    text-align: center;
+
 }
 
 main .container-luis #assets{
@@ -362,6 +400,7 @@ main .container-luis #assets{
 }
 
 main .container-luis #assets .asset-point{
+    font-size: 18px;
     border: 1px solid black;
     padding: 4px;
     margin: 4px;
@@ -390,7 +429,7 @@ main .skill-bar{
 
 main .skill-per{
     height: 20px;
-    background-color: aqua;
+    background-color: #3d3d91;
     border-radius: 8px;
     width: 0%;
     transition: 1s linear;
@@ -433,7 +472,7 @@ main .container-luis .contact a{
     text-decoration: none;
     font-size: 20px;
     color: black;
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 10px;
     border-radius: 10px;
     transition: transform 1s;
@@ -513,56 +552,22 @@ section .servicios-luis .contenedor-servicios .servicio img{
 /*FOOTER*/
 
 footer .f-background{
-    min-height: 80vh;
+    min-height: 50vh;
     max-width: 100%;
-    background-color: #c3bee7;
+    background-color: rgb(235 235 235);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 footer .f-main{
-    background-image: url(../imgs/—Pngtree—geometric\ purple\ background\ with\ modern_1243070.jpg);
+    background-color: #f7eee6;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 95%;
-    border: 2px solid black;
     margin: 40px
-}
-
-footer .f-partner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-footer .f-partner h2{
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    font-size: 40px;
-    margin: 0;
-    text-align: center;
-}
-
-footer .f-partner p{
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    text-align: center;
-    font-size: 25px;
-}
-
-
-footer .f-social h2{
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    font-size: 35px;
-    text-align: center;
 }
 
 footer .f-social{
@@ -570,6 +575,38 @@ footer .f-social{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+footer .f-social p{
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+footer .f-social span{
+    font-size: 30px;
+    color: rgb(167 121 121);
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    text-decoration: underline;
+}
+
+footer .f-social h2{
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    font-size: 35px;
+    text-align: center;
+}
+
+footer .f-social .btn-social{
+    font-size: 50px;
+    color: black;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    text-decoration: none;
 }
 
 footer .f-social .f-iconos{
@@ -581,81 +618,20 @@ footer .f-social .f-iconos{
 
 footer .f-social .f-iconos i{
     font-size: 50px;
-    background: -webkit-linear-gradient(rgb(75, 12, 158), rgb(236, 92, 236));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: black;
     padding-left: 20px;
     padding-right: 20px;
 }
 
+
+
 footer .f-privacy{
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    font-weight: 100;
+    color: black;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
     margin-top: 60px;
 }
-
-footer .f-campos{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid white;
-    padding: 25px;
-    border-radius: 25px;
-}
-
-footer .f-campos .campo{
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-}
-
-footer .f-campos .campo input{
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    width: 100%;
-    height: 50%;
-    font-size: 18px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-footer .f-campos .campo label{
-    font-size: 20px;
-}
-
-footer .f-campos .campo textarea{
-    width: 100%;
-    height: 50%;
-}
-
-footer .f-partner .f-campos .boton-contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-footer .f-partner .f-campos .btn-cont{
-    width: 30%;
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    border: 2px outset white;
-    padding: 12px;
-    color: white;
-    border-radius: 20px;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    margin: 25px;
-}
-
-footer .f-partner .f-campos .btn-cont:hover{
-    
-}
-
 
 
 /*MEDIA QUERIES*/
