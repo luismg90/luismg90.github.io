@@ -167,7 +167,7 @@ header .hero .dev-location .hero-imagen{
 
 header .hero .dev-location .hero-imagen img{
     width: 70%;
-    border-radius: 200px;
+    border-radius: 100%;
 }
 
 
@@ -264,7 +264,7 @@ main.descripcion .columna-informacion{
 
 main.descripcion .cuadro-experiencia{
     font-size: 20px;
-    color: honeydew;
+    color: black;
     max-width: 100%;
     background:transparent;
     display: flex;
@@ -275,19 +275,11 @@ main.descripcion .cuadro-experiencia{
 
 main.descripcion .cuadro-experiencia .col-exp{
     width: 33.33%; 
-    background: #3f393996;
     margin: 14px;
     text-align: center;
     border-radius: 12px;
     font-family: 'Lato', sans-serif;
     font-weight: 100;
-    transition: transform 0.5s;
-}
-
-main.descripcion .col-exp:hover{
-    transition: all 0.5s ease-in-out;
-    cursor: pointer;
-    transform: scale(1.1);
 }
 
 main.descripcion .cuadro-experiencia .col-exp:first-child{
@@ -308,14 +300,15 @@ main.descripcion .cuadro-experiencia .col-exp h1{
 
 main.descripcion .cuadro-experiencia .col-exp h2{
     font-size: 20px;
+    font-family: 'Playfair Display', serif;
 }
 
 main.descripcion .cuadro-experiencia .col-exp{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 main.descripcion .cuadro-experiencia .col-exp .icons{
-    font-size: 30px;
+    font-size: 50px;
 }
 
 main.descripcion .cuadro-experiencia .col-exp .lang{
@@ -334,19 +327,21 @@ main.descripcion .cuadro-experiencia .col-exp .dot{
     height: 12px;
     border-radius: 100%;
     border: 0.1rem #f7f6f6 solid;
-    background-color: white;
+    background-color: black;
 }
 
 main.descripcion .cuadro-experiencia .col-exp span{
     font-size: 14px;
     margin-right: 5px;
+    font-weight: 900;
 }
 main.descripcion .cuadro-experiencia .col-exp span:last-child{
     margin-left: 0;
 }
 
 main.descripcion .cuadro-experiencia .col-exp p{
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 
@@ -492,6 +487,86 @@ main .container-luis .contact a.btn-secondary:hover{
     transition-duration: 1s;
 }
 
+/*PORTFOLIO*/
+
+section.portfolio{
+    background-color: rgb(235, 235, 235);
+    min-height: 80vh;
+    max-width: 100%;    
+}
+
+section.portfolio h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+section.portfolio .wrapper-portfolio{
+    width: 90%;
+    max-width: 940px;
+    margin: 20px auto;
+    background-color: #fff;
+}
+
+section.portfolio .wrapper-portfolio .examples{
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr 1fr 1fr;
+    grid-template-rows: 1fr 200px 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: stretch;
+}
+
+section.portfolio .wrapper-portfolio .examples > *{
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333;
+    color: #fff;
+}
+
+section.portfolio .wrapper-portfolio .examples .coffee{
+    background-color: #f7eee6;
+    background-position: bottom left;
+    color: #fff;
+    grid-column: 1/4;
+    grid-row: 4/4;
+    text-align: center;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+section.portfolio .wrapper-portfolio .examples .travel{
+    background-color: #f7eee6;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/2;
+    grid-row: 2/4;
+    width: 250px;
+    text-align: center;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+section.portfolio .wrapper-portfolio .examples .store{
+    background-color: #f7eee6; 
+    color: #fff;
+    grid-column: 2/5;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+section.portfolio .wrapper-portfolio .examples .freelance{
+    background-color: #f7eee6; 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/6;
+    height: 250px;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
 
 /*WRAPPER SERVICIOS*/
 
@@ -536,18 +611,23 @@ section .servicios-luis .contenedor-servicios .servicio{
 
 section .servicios-luis .contenedor-servicios .servicio h3{
     font-size: 30px;
-    height: 50px;
+    font-family: 'Playfair Display', serif;
+
     
 }
 
 section .servicios-luis .contenedor-servicios .servicio p{
-    height: 50px;
+    font-size: 15px;
+    padding: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 
 section .servicios-luis .contenedor-servicios .servicio img{
     width: 70%;
 }
+
+
 
 /*FOOTER*/
 
@@ -640,6 +720,10 @@ footer .f-privacy{
 
 @media screen and (max-width: 1200px) {
 
+    header .hero #hero-text .btn-dev{
+        width: 35%;
+    }
+
     header .hero .dev-location{
         height: 600px;
     }
@@ -648,8 +732,8 @@ footer .f-privacy{
         font-size: 80px;
     }
 
-    header .hero .dev-location .dev-nav .under-animation{
+    main.descripcion .cuadro-experiencia .col-exp p{
         font-size: 15px;
-        font-weight: 700;
     }
+
 }
