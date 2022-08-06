@@ -537,11 +537,28 @@ section.portfolio .wrapper-portfolio .examples > *{
     color: #fff;
 }
 
+section.portfolio .wrapper-portfolio .examples .text{
+    border-radius: 20px;
+    background-color: #f7eee699;
+}
+
+section.portfolio .wrapper-portfolio .examples .text h3{
+    font-size: 30px;
+    padding: 15px;
+    background: -webkit-linear-gradient(rgb(138, 4, 4), rgb(100 94 60));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 section.portfolio .wrapper-portfolio .examples .coffee{
-    background-color: #f7eee6;
-    background-position: bottom left;
-    color: #fff;
-    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imgs/scshots/coffee.jpg);
+    background-position: center;
+    background-color: #f7eee6; 
+    grid-column: 1/6;
     grid-row: 4/4;
     text-align: center;
     color: black;
@@ -549,10 +566,13 @@ section.portfolio .wrapper-portfolio .examples .coffee{
 }
 
 section.portfolio .wrapper-portfolio .examples .travel{
+    background-image: url(../imgs/scshots/travel.jpg);
+    background-position: center;
     background-color: #f7eee6;
-    color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-column: 1/2;
     grid-row: 2/4;
     width: 250px;
@@ -562,20 +582,41 @@ section.portfolio .wrapper-portfolio .examples .travel{
 }
 
 section.portfolio .wrapper-portfolio .examples .store{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imgs/scshots/store.jpg);
+    background-position: center;
     background-color: #f7eee6; 
-    color: #fff;
-    grid-column: 2/5;
+    grid-column: 2/6;
+    grid-row: 2/4;
     color: black;
     font-family: 'Lato', sans-serif;
 }
 
 section.portfolio .wrapper-portfolio .examples .freelance{
-    background-color: #f7eee6; 
-    color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imgs/scshots/freelance.jpg);
+    background-position: center;
+    background-color: #f7eee6;
     grid-column: 1/6;
     height: 250px;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+
+
+section.portfolio .wrapper-portfolio .examples .extra{
+    background-color: #f7eee6; 
+    color: #fff;
+    width: 200px;
+    grid-row: 3/5;
+    height: 280px;
     color: black;
     font-family: 'Lato', sans-serif;
 }
@@ -721,9 +762,9 @@ footer .f-social .f-iconos i{
 
 footer .f-privacy{
     color: black;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 25px;
+    font-family: 'Lato', sans-serif;
     font-weight: 300;
+    font-size: 25px;
     margin-top: 60px;
 }
 
