@@ -595,6 +595,7 @@ section.portfolio .wrapper-portfolio .examples .store{
     font-family: 'Lato', sans-serif;
 }
 
+
 section.portfolio .wrapper-portfolio .examples .freelance{
     display: flex;
     flex-direction: column;
@@ -608,6 +609,13 @@ section.portfolio .wrapper-portfolio .examples .freelance{
     color: black;
     font-family: 'Lato', sans-serif;
     position: relative;
+    transition: transform 1.5s;
+}
+
+section.portfolio .wrapper-portfolio .examples .freelance:hover{
+    transform: scale(1.1);
+    transition: all 0.5 ease-in-out;
+    transition-duration: 1.5s;
 }
 
 

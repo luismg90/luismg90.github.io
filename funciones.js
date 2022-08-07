@@ -34,3 +34,8 @@ $(document).ready(function(){
 })
 
 // Funcion para recibir correos de email.js
+
+
+// Funcion para el scroll de los elementos con transiciones
+
+const scrollElements = document.querySelectorAll(".js-scroll");
