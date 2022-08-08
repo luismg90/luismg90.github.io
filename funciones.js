@@ -46,7 +46,9 @@ const scrollElements = document.querySelectorAll(".js-scroll");
 $(window).scroll(function(){
 
     // container-luis  --> addClass(side-animation )
-    
+    $("#hero-text").scroll(function(){
+        $("")
+    })
   
 
 

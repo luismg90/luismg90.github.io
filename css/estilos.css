@@ -65,6 +65,7 @@ header .hero #hero-text p{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 20px;
+    /* opacity: 0; */
 }
 
 
@@ -74,6 +75,7 @@ header .hero #hero-text h1{
     font-weight: 700;
     font-family: 'Playfair Display', serif;
     margin: 0;
+    /* opacity: 0; */
 }
 
 header .hero #hero-text h2{
@@ -81,6 +83,7 @@ header .hero #hero-text h2{
     color: grey;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    /* opacity: 0; */
 }
 
 header .hero #hero-text h3{
@@ -88,6 +91,7 @@ header .hero #hero-text h3{
     color: black;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+    /* opacity: 0; */
 }
 
 header .hero #hero-text h4{
@@ -95,6 +99,7 @@ header .hero #hero-text h4{
     color: black;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+    /* opacity: 0; */
 }
 
 header .hero #hero-text .btn-dev{
@@ -109,7 +114,7 @@ header .hero #hero-text .btn-dev{
     margin: 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-
+    /* opacity: 0; */
 }
 
 header .hero #hero-text .btn-dev:hover{
@@ -381,7 +386,7 @@ main .container-luis h1{
     font-weight: 300;
     font-size: 60px;
     font-family: 'Playfair Display', serif;
-    transform: translateX(100vw);
+    /* transform: translateX(100vw); */
 }
 
 main .container-luis h2{
@@ -389,7 +394,7 @@ main .container-luis h2{
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    transform: translateX(100vw);
+    /* transform: translateX(100vw); */
 }
 
 main .container-luis p{
@@ -397,7 +402,7 @@ main .container-luis p{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     text-align: center;
-    transform: translateX(100vw);
+    /* transform: translateX(100vw); */
 
 }
 
@@ -406,7 +411,7 @@ main .container-luis #assets{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    transform: translateX(100vw);
+    /* transform: translateX(100vw); */
 }
 
 main .container-luis #assets .asset-point{
@@ -420,7 +425,7 @@ main .skills{
     width: 100%;
     max-width: 600px;
     padding: 0 20px;
-    transform: translateX(100vw);
+    /* transform: translateX(100vw); */
 }
 
 main .skill-name{
@@ -488,7 +493,7 @@ main .container-luis .contact a{
     border-radius: 10px;
     transition: transform 1s;
     margin: 20px;
-    transform: translateX(100vw);
+    /* transform: translateX(100vw); */
 }
 
 
@@ -517,6 +522,7 @@ section.portfolio h1{
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-weight: 300;
+    /* transform: translateY(-500vw); */
 }
 
 section.portfolio .wrapper-portfolio{
@@ -524,6 +530,7 @@ section.portfolio .wrapper-portfolio{
     max-width: 940px;
     margin: 20px auto;
     background-color: #fff;
+    /* transform: translateY(-500vw); */
 }
 
 section.portfolio .wrapper-portfolio .examples{
@@ -658,6 +665,7 @@ section .servicios-luis h1{
     font-weight: 300;
     font-size: 60px;
     font-family: 'Playfair Display', serif;
+    /* transform: translateX(-100vw); */
 }
 
 section .servicios-luis .contenedor-servicios{
@@ -665,6 +673,7 @@ section .servicios-luis .contenedor-servicios{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    /* transform: translateX(-100vw); */
 }
 
 section .servicios-luis .contenedor-servicios .servicio{
@@ -887,6 +896,81 @@ footer .f-privacy{
 
 }
 
+@media screen and (max-width: 992px){
+    a.menu-responsive{
+        right: -208px;
+    }
+
+    header .hero #hero-text .btn-dev{
+        width: 41%;
+    }
+
+    main .container-luis p{
+        font-size: 25px;
+    }
+
+    main .container-luis h2{
+        font-size: 25px;
+    }
+    main .container-luis #assets .asset-point{
+        font-size: 12px;
+    }
+
+    main .container-luis .contact a{
+        font-size: 18px;
+    }
+
+    main.descripcion .cuadro-experiencia .col-exp h2{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header .hero{
+        padding-top: 134px;
+    }
+
+    a.menu-responsive{
+        top: -215px;
+        right: -142px;
+    }
+
+    header .hero #hero-text .btn-dev{
+        width: 53%;
+    }
+
+    main .container-luis p{
+        font-size: 18px;
+    }
+
+    main .container-luis h2{
+        font-size: 18px;
+    }
+    main .container-luis #assets .asset-point{
+        font-size: 8px;
+    }
+
+    main .container-luis .contact a{
+        font-size: 18px;
+    }
+
+    main.descripcion .cuadro-experiencia .col-exp h2{
+        font-size: 16px;
+    }
+
+    main.descripcion .cuadro-experiencia .col-exp{
+        margin: 0;
+    }
+
+    main.descripcion .cuadro-experiencia .col-exp .dot{
+        width: 0;
+    }
+
+    main .skills{
+        width: 90%;
+    }
+}
+
 
 
 
@@ -897,27 +981,25 @@ footer .f-privacy{
 
 
 #hero-text.a-animation p{
-    animation: animacioncilla 1s 0s both;
-
-    animation-name: animacioncilla;
-    animation-duration: 1s;
-    animation-delay: 0s;
-    animation-fill-mode: both;
+    animation: hero-anim 1s 0s both;
 }  
 #hero-text.a-animation h1{
-    animation: animacioncilla 1s 0.2s both
+    animation: hero-anim 1s 0.2s both
 } 
 #hero-text.a-animation h2{
-    animation: animacioncilla 1s 0.4s both
+    animation: hero-anim 1s 0.4s both
 } 
 #hero-text.a-animation h3{
-    animation: animacioncilla 1s 0.6s both
-} 
+    animation: hero-anim 1s 0.6s both
+}
+#hero-text.a-animation h4{
+    animation: hero-anim 1s 0.8s both
+}  
 #hero-text.a-animation a{
-    animation: animacioncilla 1s 0.8s both
+    animation: hero-anim 1s 1s both
 } 
 
-@keyframes animacioncilla {
+@keyframes hero-anim {
     0%{
         opacity: 0;
     }
@@ -979,7 +1061,7 @@ section.portfolio.up-animation .wrapper-portfolio{
 
 @keyframes port-anim {
     0%{
-        transform: translateY(-100vw);
+        transform: translateY(-500vw);
     }
     100%{
         transform: translateY(0);
@@ -988,10 +1070,39 @@ section.portfolio.up-animation .wrapper-portfolio{
 
 /*Animacion a contenedor Servicios*/
 
-section .servicios-luis.down-animation h1{
-    animation: port-anim 1s 0.2s both;
+section .servicios-luis.left-animation h1{
+    animation: serv-anim 1s 0.2s both;
 }
 
+section .servicios-luis.left-animation .contenedor-servicios{
+    animation: serv-anim 1s 0.4s both;
+}
 
+@keyframes serv-anim {
+    0%{
+        transform: translateX(-100vw);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
 
+/*Animacion a Footer*/
+
+footer .f-social.spam-animation p{
+    animation: serv-anim 1s 0.2s both;
+}
+
+footer .f-social.spam-animation span{
+    animation: foot-anim 2s 1s both;
+}
+
+    @keyframes foot-anim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    } 
 
