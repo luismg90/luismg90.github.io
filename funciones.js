@@ -29,8 +29,8 @@ $(document).ready(function(){
     $(".menu-responsive").click(function(){
         $("header nav .dev-nav").toggleClass("close-dev-nav")
         $(this).toggleClass("open")
-      });
-     
+        });
+        
 })
 
 // Funcion para recibir correos de email.js
@@ -39,3 +39,15 @@ $(document).ready(function(){
 // Funcion para el scroll de los elementos con transiciones
 
 const scrollElements = document.querySelectorAll(".js-scroll");
+
+
+
+
+$(window).scroll(function(){
+
+    // container-luis  --> addClass(side-animation )
+    
+  
+
+
+})

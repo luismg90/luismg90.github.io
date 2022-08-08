@@ -103,7 +103,7 @@ header .hero #hero-text .btn-dev{
     font-size: 20px;
     color: black;
     border: 1px solid black;
-    padding: 10px;
+    padding: 8px;
     border-radius: 10px;
     transition: transform 1s;
     margin: 20px;
@@ -381,6 +381,7 @@ main .container-luis h1{
     font-weight: 300;
     font-size: 60px;
     font-family: 'Playfair Display', serif;
+    transform: translateX(100vw);
 }
 
 main .container-luis h2{
@@ -388,6 +389,7 @@ main .container-luis h2{
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+    transform: translateX(100vw);
 }
 
 main .container-luis p{
@@ -395,6 +397,7 @@ main .container-luis p{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     text-align: center;
+    transform: translateX(100vw);
 
 }
 
@@ -403,6 +406,7 @@ main .container-luis #assets{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    transform: translateX(100vw);
 }
 
 main .container-luis #assets .asset-point{
@@ -416,6 +420,7 @@ main .skills{
     width: 100%;
     max-width: 600px;
     padding: 0 20px;
+    transform: translateX(100vw);
 }
 
 main .skill-name{
@@ -483,6 +488,7 @@ main .container-luis .contact a{
     border-radius: 10px;
     transition: transform 1s;
     margin: 20px;
+    transform: translateX(100vw);
 }
 
 
@@ -526,7 +532,6 @@ section.portfolio .wrapper-portfolio .examples{
     grid-template-rows: 1fr 200px 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    justify-items: stretch;
 }
 
 section.portfolio .wrapper-portfolio .examples > *{
@@ -881,3 +886,112 @@ footer .f-privacy{
 
 
 }
+
+
+
+
+
+
+
+/* Animcion a contenedor HERO */
+
+
+#hero-text.a-animation p{
+    animation: animacioncilla 1s 0s both;
+
+    animation-name: animacioncilla;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}  
+#hero-text.a-animation h1{
+    animation: animacioncilla 1s 0.2s both
+} 
+#hero-text.a-animation h2{
+    animation: animacioncilla 1s 0.4s both
+} 
+#hero-text.a-animation h3{
+    animation: animacioncilla 1s 0.6s both
+} 
+#hero-text.a-animation a{
+    animation: animacioncilla 1s 0.8s both
+} 
+
+@keyframes animacioncilla {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/*Animacion a contenedor descripcion*/
+
+
+.container-luis.side-animation h1{
+    animation: animate 1s 0.2s both;
+
+}
+
+.container-luis.side-animation p{
+    animation: animate 1s 0.4s both;
+}
+
+.container-luis.side-animation h2{
+    animation: animate 1s 0.6s both;
+}
+
+
+main .container-luis.side-animation #assets{
+    animation: animate 1s 0.8s both;
+}
+
+.container-luis.side-animation .skills{
+    animation: animate 1s 1s both;
+}
+
+.container-luis.side-animation .contact a{
+    animation: animate 1s 1.2s both;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateX(100vw);
+    }
+    100%{
+        transform: translateX(0);
+    }    
+}
+
+
+/*Animacion a contenedor Portfolio*/
+
+section.portfolio.up-animation h1{
+    animation: port-anim 1s 0.2s both;
+}
+
+section.portfolio.up-animation .wrapper-portfolio{
+    animation: port-anim 1s 1s both;
+}
+
+
+@keyframes port-anim {
+    0%{
+        transform: translateY(-100vw);
+    }
+    100%{
+        transform: translateY(0);
+    }    
+}
+
+/*Animacion a contenedor Servicios*/
+
+section .servicios-luis.down-animation h1{
+    animation: port-anim 1s 0.2s both;
+}
+
+
+
+
