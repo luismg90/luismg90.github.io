@@ -46,10 +46,37 @@ const scrollElements = document.querySelectorAll(".js-scroll");
 $(window).scroll(function(){
 
     // container-luis  --> addClass(side-animation )
-    $("#hero-text").scroll(function(){
-        $("")
-    })
   
+    // la cantidad de scroll
+    var scroll = $(document).scrollTop()
+    console.log(scroll);
 
+    //la distancia en la que esta el elemente sobre todo
+    var distancia  = $(".hero").offset().top
+    console.log(distancia)
 
+    if (scroll > distancia)  {
+        $("#hero-text").addClass("a-animation")
+        
+    }
+
+    var distancia = $(".descripcion").offset().top
+        if(scroll + 300 > distancia) {
+            $(".container-luis").addClass("side-animation")
+        }
+
+    var distancia = $(".portfolio").offset().top
+        if(scroll + 300 > distancia) {
+            $(".portfolio").addClass("up-animation")
+        }
+
+    var distancia = $(".wrapper-servicios").offset().top
+        if(scroll + 400 > distancia) {
+            $(".servicios-luis").addClass("left-animation")
+        }
+
+    var distancia = $(".f-background").offset().top
+        if(scroll + 1000 > distancia)
+            $(".f-social").addClass("spam-animation")
+    
 })

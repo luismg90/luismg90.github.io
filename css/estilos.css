@@ -65,7 +65,7 @@ header .hero #hero-text p{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 20px;
-    /* opacity: 0; */
+    opacity: 0;
 }
 
 
@@ -75,7 +75,7 @@ header .hero #hero-text h1{
     font-weight: 700;
     font-family: 'Playfair Display', serif;
     margin: 0;
-    /* opacity: 0; */
+    opacity: 0;
 }
 
 header .hero #hero-text h2{
@@ -83,7 +83,7 @@ header .hero #hero-text h2{
     color: grey;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    /* opacity: 0; */
+    opacity: 0;
 }
 
 header .hero #hero-text h3{
@@ -91,7 +91,7 @@ header .hero #hero-text h3{
     color: black;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    /* opacity: 0; */
+    opacity: 0;
 }
 
 header .hero #hero-text h4{
@@ -99,7 +99,7 @@ header .hero #hero-text h4{
     color: black;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    /* opacity: 0; */
+    opacity: 0;
 }
 
 header .hero #hero-text .btn-dev{
@@ -114,7 +114,7 @@ header .hero #hero-text .btn-dev{
     margin: 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    /* opacity: 0; */
+    opacity: 0;
 }
 
 header .hero #hero-text .btn-dev:hover{
@@ -386,7 +386,7 @@ main .container-luis h1{
     font-weight: 300;
     font-size: 60px;
     font-family: 'Playfair Display', serif;
-    /* transform: translateX(100vw); */
+    transform: translateX(100vw);
 }
 
 main .container-luis h2{
@@ -394,7 +394,7 @@ main .container-luis h2{
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    /* transform: translateX(100vw); */
+    transform: translateX(100vw);
 }
 
 main .container-luis p{
@@ -402,7 +402,7 @@ main .container-luis p{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     text-align: center;
-    /* transform: translateX(100vw); */
+    transform: translateX(100vw);
 
 }
 
@@ -411,7 +411,7 @@ main .container-luis #assets{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* transform: translateX(100vw); */
+    transform: translateX(100vw);
 }
 
 main .container-luis #assets .asset-point{
@@ -425,7 +425,7 @@ main .skills{
     width: 100%;
     max-width: 600px;
     padding: 0 20px;
-    /* transform: translateX(100vw); */
+    transform: translateX(100vw);
 }
 
 main .skill-name{
@@ -493,7 +493,7 @@ main .container-luis .contact a{
     border-radius: 10px;
     transition: transform 1s;
     margin: 20px;
-    /* transform: translateX(100vw); */
+    transform: translateX(100vw);
 }
 
 
@@ -514,7 +514,8 @@ main .container-luis .contact a.btn-secondary:hover{
 section.portfolio{
     background-color: rgb(235, 235, 235);
     min-height: 80vh;
-    max-width: 100%;    
+    max-width: 100%;
+    padding: 150px;    
 }
 
 section.portfolio h1{
@@ -522,7 +523,7 @@ section.portfolio h1{
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-weight: 300;
-    /* transform: translateY(-500vw); */
+    transform: translateY(-500vw);
 }
 
 section.portfolio .wrapper-portfolio{
@@ -530,7 +531,8 @@ section.portfolio .wrapper-portfolio{
     max-width: 940px;
     margin: 20px auto;
     background-color: #fff;
-    /* transform: translateY(-500vw); */
+    transform: translateY(-500vw);
+    padding: 150px;
 }
 
 section.portfolio .wrapper-portfolio .examples{
@@ -665,7 +667,7 @@ section .servicios-luis h1{
     font-weight: 300;
     font-size: 60px;
     font-family: 'Playfair Display', serif;
-    /* transform: translateX(-100vw); */
+    transform: translateX(-100vw);
 }
 
 section .servicios-luis .contenedor-servicios{
@@ -673,7 +675,7 @@ section .servicios-luis .contenedor-servicios{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* transform: translateX(-100vw); */
+    transform: translateX(-100vw);
 }
 
 section .servicios-luis .contenedor-servicios .servicio{
@@ -688,7 +690,7 @@ section .servicios-luis .contenedor-servicios .servicio h3{
     font-size: 30px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-
+    max-height: 30px;
     
 }
 
@@ -881,6 +883,14 @@ footer .f-privacy{
         justify-content: flex-start;
     }
 
+    main.descripcion .wrapper-luis{
+        width: 57%;
+    }
+
+    main.descripcion .columna-informacion{
+        width: 43%;
+    }
+
     main.descripcion .cuadro-experiencia .col-exp p{
         font-size: 15px;
     }
@@ -928,6 +938,7 @@ footer .f-privacy{
 @media screen and (max-width: 768px){
     header .hero{
         padding-top: 134px;
+        padding-bottom: 150px;
     }
 
     a.menu-responsive{
@@ -947,11 +958,41 @@ footer .f-privacy{
         font-size: 18px;
     }
     main .container-luis #assets .asset-point{
-        font-size: 8px;
+        font-size: 14px;
+    }
+
+    main.descripcion{
+        flex-wrap: wrap;
+    }
+
+    main.descripcion .columna-informacion{
+        width: 100%;
+        padding-top: 100px;
+    }
+
+    main.descripcion .wrapper-luis{
+        width: 100%;
     }
 
     main .container-luis .contact a{
         font-size: 18px;
+    }
+
+    main.descripcion .imagen-luis{
+        height: 200px;
+        width: 200px;
+    }
+
+    main.descripcion .text-imagen{
+        height: 126%;
+    }
+
+    main.descripcion .text-imagen p{
+        top: -15%;
+    }
+
+    main.descripcion .text-imagen span{
+        transform-origin: 0 143px;
     }
 
     main.descripcion .cuadro-experiencia .col-exp h2{
@@ -962,12 +1003,110 @@ footer .f-privacy{
         margin: 0;
     }
 
+    main.descripcion .cuadro-experiencia .col-exp p{
+        font-size: 20px;
+    }
+
     main.descripcion .cuadro-experiencia .col-exp .dot{
-        width: 0;
+        margin: 4px;
     }
 
     main .skills{
         width: 90%;
+    }
+
+    main .skill-name{
+        margin: 8px 0;
+        font-size: 10px;
+    }
+
+    main .skill-bar{
+        height: 10px;
+    }
+
+    main .skill-per{
+        height: 10px;
+    }
+
+    section .servicios-luis .contenedor-servicios{
+        flex-wrap: wrap;
+    }
+
+    section .servicios-luis .contenedor-servicios .servicio h3{
+        font-size: 50px;
+    }
+
+    section .servicios-luis .contenedor-servicios .servicio p{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    header .hero{
+        padding-top: 200px;
+    }
+
+    a.menu-responsive{
+        top: -770px;
+        right: 135px;
+    }
+
+    header .hero .dev-location{
+        flex-wrap: wrap;
+    }
+
+    header .hero #hero-text{
+        width: 100%;
+    }
+
+    header .hero .dev-location .dev-nav{
+        width: 30%;
+    }
+
+    header .hero #hero-text .btn-dev{
+        width: 29%;
+    }
+
+    section.portfolio{
+        padding: 0;
+    }
+
+    section.portfolio .wrapper-portfolio{
+        padding: 0;
+    }
+
+    section.portfolio .wrapper-portfolio .examples .travel {
+        width: 150px;
+    }
+
+    footer .f-social p{
+        font-size: 20px;
+        text-align: center;
+        
+    }
+
+    footer .f-social span{
+        font-size: 25px;
+    }
+
+    footer .f-privacy{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 350px){
+    header .hero{
+        padding-bottom: 350px
+    }
+
+    header .hero #hero-text .btn-dev{
+        width: 49%;
+    }
+
+    a.menu-responsive{
+        top: -1000px;
+        right: 78px;
     }
 }
 
@@ -977,7 +1116,7 @@ footer .f-privacy{
 
 
 
-/* Animcion a contenedor HERO */
+/* Animacion a contenedor HERO */
 
 
 #hero-text.a-animation p{
@@ -1051,11 +1190,11 @@ main .container-luis.side-animation #assets{
 /*Animacion a contenedor Portfolio*/
 
 section.portfolio.up-animation h1{
-    animation: port-anim 1s 0.2s both;
+    animation: port-anim 1s 0.1s both;
 }
 
 section.portfolio.up-animation .wrapper-portfolio{
-    animation: port-anim 1s 1s both;
+    animation: port-anim 1s 0.2s both;
 }
 
 
