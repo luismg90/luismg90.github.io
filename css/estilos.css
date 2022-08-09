@@ -59,6 +59,7 @@ header .hero #hero-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 }
 
 header .hero #hero-text p{
@@ -379,6 +380,7 @@ main.descripcion .container-luis{
     border-radius: 20px;
     opacity: 0.8;
     margin: 30px;
+    overflow: hidden;
 }
 
 main .container-luis h1{
@@ -515,7 +517,11 @@ section.portfolio{
     background-color: rgb(235, 235, 235);
     min-height: 80vh;
     max-width: 100%;
-    padding: 150px;    
+    padding-top: 50px; 
+    padding-left:150px ;
+    padding-right: 150px; 
+    padding-bottom: 50px; 
+    overflow: hidden; 
 }
 
 section.portfolio h1{
@@ -532,7 +538,10 @@ section.portfolio .wrapper-portfolio{
     margin: 20px auto;
     background-color: #fff;
     transform: translateY(-500vw);
-    padding: 150px;
+    padding-top: 50px; 
+    padding-left:150px ;
+    padding-right: 150px; 
+    padding-bottom: 50px
 }
 
 section.portfolio .wrapper-portfolio .examples{
@@ -556,7 +565,7 @@ section.portfolio .wrapper-portfolio .examples .text{
     background-color: #f7eee699;
 }
 
-section.portfolio .wrapper-portfolio .examples .text h3{
+section.portfolio .wrapper-portfolio .examples .text a{
     font-size: 30px;
     padding: 15px;
     background: -webkit-linear-gradient(rgb(138, 4, 4), rgb(100 94 60));
@@ -623,15 +632,7 @@ section.portfolio .wrapper-portfolio .examples .freelance{
     color: black;
     font-family: 'Lato', sans-serif;
     position: relative;
-    transition: transform 1.5s;
 }
-
-section.portfolio .wrapper-portfolio .examples .freelance:hover{
-    transform: scale(1.1);
-    transition: all 0.5 ease-in-out;
-    transition-duration: 1.5s;
-}
-
 
 section.portfolio .wrapper-portfolio .examples .extra{
     background-color: #f7eee6; 
@@ -660,6 +661,7 @@ section .servicios-luis{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 section .servicios-luis h1{
@@ -726,7 +728,8 @@ footer .f-main{
     justify-content: center;
     align-items: center;
     width: 95%;
-    margin: 40px
+    margin: 40px;
+    overflow: hidden;
 }
 
 footer .f-social{
@@ -896,14 +899,12 @@ footer .f-privacy{
     }
 
     main .container-luis #assets .asset-point{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     main.descripcion .cuadro-experiencia .col-exp .dot{
         margin: 0;
     }
-
-
 }
 
 @media screen and (max-width: 992px){
@@ -1028,12 +1029,17 @@ footer .f-privacy{
         height: 10px;
     }
 
+    section.portfolio .wrapper-portfolio{
+        padding: 0;
+    }
+
     section .servicios-luis .contenedor-servicios{
         flex-wrap: wrap;
     }
 
     section .servicios-luis .contenedor-servicios .servicio h3{
         font-size: 50px;
+        max-height: 40px;
     }
 
     section .servicios-luis .contenedor-servicios .servicio p{
@@ -1101,12 +1107,79 @@ footer .f-privacy{
     }
 
     header .hero #hero-text .btn-dev{
-        width: 49%;
+        width: 51%;
     }
 
     a.menu-responsive{
         top: -1000px;
         right: 78px;
+    }
+
+    header .hero .dev-location .dev-nav{
+        width: 45%;
+        margin: 0;
+    }
+
+    main.descripcion .cuadro-experiencia{
+        flex-wrap: wrap;
+    }
+
+    main.descripcion .cuadro-experiencia .col-exp:first-child{
+        width: 100%;
+    }
+
+    main.descripcion .cuadro-experiencia .col-exp{
+        width: 100%;
+    }
+
+    main.descripcion .cuadro-experiencia .col-exp h2{
+        font-size: 22px;
+    }
+
+    main .container-luis h1{
+        text-align: center;
+    }
+
+    main .container-luis #assets{
+        flex-wrap: wrap;
+    }
+
+    main .container-luis #assets .asset-point{
+        width: 100%;
+    }
+
+    main .container-luis .contact a{
+        font-size: 15px;
+    }
+
+    section.portfolio .wrapper-portfolio .examples .freelance{
+        height: 188px;
+    }
+
+    section.portfolio .wrapper-portfolio .examples{
+        grid-template-columns: 1fr 100px 1fr 1fr 1fr;
+    }
+
+    section.portfolio .wrapper-portfolio .examples .text a{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    section .servicios-luis .contenedor-servicios .servicio h3{
+        font-size: 34px;
+        max-height: 29px;
+    }
+
+    footer .f-social .btn-social{
+        font-size: 35px;
+    }
+
+    footer .f-social .f-iconos i{
+        font-size: 30px;
+    }
+
+    footer .f-privacy{
+        text-align: center;
     }
 }
 

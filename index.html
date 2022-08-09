@@ -16,6 +16,9 @@
         rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
     <title>Portfolio Luis</title>
 </head>
 
@@ -43,10 +46,10 @@
                     </div>
                     <div class="dev-nav">
                         <a class="under-animation">HOME</a>
-                        <a class="under-animation">ABOUT ME</a>
-                        <a class="under-animation">PORTFOLIO</a>
-                        <a class="under-animation">SERVICES</a>
-                        <a href="contact.html" class="under-animation">CONTACT</a>
+                        <a class="under-animation" href="#about-me">ABOUT ME</a>
+                        <a class="under-animation" href="#portfolio">PORTFOLIO</a>
+                        <a class="under-animation" href="#services">SERVICES</a>
+                        <a href="#footer" class="under-animation">CONTACT</a>
                     </div>
                 </div>
             </div>
@@ -54,7 +57,7 @@
         </nav>
     </header>
 
-    <main class="descripcion">
+    <main class="descripcion" id="about-me">
         <div class="columna-informacion">
             <div class="imagen-luis">
                 <div class="logo"></div>
@@ -147,35 +150,35 @@
 
     </main>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h1>Portfolio</h1>
         <div class="wrapper-portfolio">
             <div class="examples">
                 <div class="coffee">
                     <div class="text">
-                        <h3>Coffee Blog landing page</h3>
+                        <a href="https://blogdecafeljmg.netlify.app">Coffee Blog landing page</a>
                     </div>
                 </div>
                 <div class="travel">
                     <div class="text">
-                        <h3>Travel Agency landing page</h3>
+                        <a href="https://blogdeviajesljmg.netlify.app">Travel Agency landing page</a>
                     </div>
                 </div>
                 <div class="freelance">
                     <div class="text">
-                        <h3>Freelance developer landing page</h3>
+                        <a href="https://freelancerljmg.netlify.app">Freelance developer landing page</a>
                     </div>
                 </div>
                 <div class="store">
                     <div class="text">
-                        <h3>Front-End store landing page</h3>
+                        <a href="https://frontendstoreljmg.netlify.app">Front-End store landing page</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="wrapper-servicios">
+    <section class="wrapper-servicios" id="services">
         <main class="servicios-luis">
             <h1>What I Do</h1>
             <div class="contenedor-servicios">
@@ -184,9 +187,9 @@
                         <img src="./imgs/designer.png" alt="">
                     </div>
                     <h3>Web Design <i class="uil uil-constructor"></i></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas accusantium quis
-                        corporis minus, fuga eligendi quibusdam ad obcaecati in quod ipsum dolorum odit eaque officia
-                        ratione tenetur magnam voluptates.</p>
+                    <p>Need help designing your website? We can create designs based on your website
+                        or redesign old websites. We can help you achieve your business goals.
+                    </p>
                 </div>
                 <div class="servicio">
                     <div class="imagen-servicio">
@@ -194,36 +197,35 @@
                     </div>
                     <h3>Web Development <i class="uil uil-html5"></i> & <br> Back-End <i
                             class="uil uil-java-script"></i> </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores vero quod laboriosam magni
-                        nostrum veniam blanditiis laborum hic aspernatur, ex voluptatum odit tempore nihil maxime
-                        voluptate laudantium praesentium doloribus quae.</p>
+                    <p>Are you a E-commerce store owner? I can help you to build a design and build custom
+                        landing pages and help you to increase your business sales. </p>
                 </div>
                 <div class="servicio">
                     <div class="imagen-servicio">
                         <img src="./imgs/developer-team.png" alt="">
                     </div>
                     <h3>Hosting & Domain<i class="uil uil-code-branch"></i></h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime nulla soluta earum neque
-                        eligendi qui cupiditate asperiores quisquam quis molestiae assumenda nemo, blanditiis expedita
-                        impedit exercitationem ipsa rem dolorum perspiciatis!</p>
+                    <p>In case you need hosting and domain for your website, we can make it happen.
+                        Just let us know, and we can provide you with a personal solution for your business.
+                    </p>
                 </div>
             </div>
         </main>
     </section>
 
     <footer>
-        <div class="f-background">
+        <div class="f-background" id="footer">
             <div class="f-main">
                 <div class="f-social">
                     <p>Based in Madrid, Spain, <span>ready to work worldwide.</span></p>
                     <a href="contact.html" class="btn-social">Contact me<i class="uil uil-at"></i></a>
                     <h2>Social Networks</h2>
                     <div class="f-iconos">
-                        <a href="www.linkedin.com/in/luis-josé-meza-garcia-80763267"><i
+                        <a href="https://www.linkedin.com/in/luis-jose-meza-garcia-80763267/"><i
                                 class="uil uil-linkedin"></i></a>
-                        <a href=""><i class="uil uil-github"></i></a>
-                        <a href=""><i class="uil uil-facebook"></i></a>
-                        <a href=""><i class="uil uil-instagram"></i></a>
+                        <a href="https://github.com/luismg90"><i class="uil uil-github"></i></a>
+                        <a href="https://www.facebook.com/luis.j.garcia.39/"><i class="uil uil-facebook"></i></a>
+                        <a href="https://www.instagram.com/mzluiz1990/"><i class="uil uil-instagram"></i></a>
                     </div>
                 </div>
                 <div class="f-privacy">
