@@ -35,30 +35,7 @@ $(document).ready(function(){
 
 // Funcion para recibir correos de email.js
 
-window.onload = function(){
-    // Window cargado (DOM)
-    // $("#contact-form")
-    document.getElementById("f-campos").addEventListener('boton-contacto', function( event ){
-        event.preventDefault();
-        
-        emailjs.sendForm('service_9kn4iub', 'template_9atewqs', this)
-        .then( 
-            function( success ){
-                // Envío de correo con éxito
-                console.log("EXITO")
-                console.log(success)
-            $("input[type=text]").val("");
-            $("textarea").val("");
-              $("f-campos").append("<div>Correo enviado con éxito </div>")
-            }, 
-            function(error){
-                // ERROR!
-                console.log("ERROR")
-                console.log(error)
-            }
-        );
-    });
-};
+
 
 
 $(window).scroll(function(){
@@ -79,7 +56,7 @@ $(window).scroll(function(){
     }
 
     var distancia = $(".descripcion").offset().top
-        if(scroll + 300 > distancia) {
+        if(scroll + 400 > distancia) {
             $(".container-luis").addClass("side-animation")
         }
 

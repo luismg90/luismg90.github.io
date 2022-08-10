@@ -571,6 +571,7 @@ section.portfolio .wrapper-portfolio .examples .text a{
     background: -webkit-linear-gradient(rgb(138, 4, 4), rgb(100 94 60));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-decoration: none;
 }
 
 section.portfolio .wrapper-portfolio .examples .coffee{
@@ -697,7 +698,7 @@ section .servicios-luis .contenedor-servicios .servicio h3{
 }
 
 section .servicios-luis .contenedor-servicios .servicio p{
-    font-size: 15px;
+    font-size: 22px;
     padding: 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -706,6 +707,13 @@ section .servicios-luis .contenedor-servicios .servicio p{
 
 section .servicios-luis .contenedor-servicios .servicio img{
     width: 70%;
+}
+
+.imagen-servicio{
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -797,6 +805,18 @@ footer .f-privacy{
 
 
 /*MEDIA QUERIES*/
+
+@media screen and (max-width: 1640px){
+    header .hero #hero-text .btn-dev{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    header .hero #hero-text .btn-dev{
+        width: 26%;
+    }
+}
 
 
 
@@ -1225,29 +1245,29 @@ footer .f-privacy{
 
 
 .container-luis.side-animation h1{
-    animation: animate 1s 0.2s both;
+    animation: animate 1s 0.1s both;
 
 }
 
 .container-luis.side-animation p{
-    animation: animate 1s 0.4s both;
+    animation: animate 1s 0.2s both;
 }
 
 .container-luis.side-animation h2{
-    animation: animate 1s 0.6s both;
+    animation: animate 1s 0.3s both;
 }
 
 
 main .container-luis.side-animation #assets{
-    animation: animate 1s 0.8s both;
+    animation: animate 1s 0.4s both;
 }
 
 .container-luis.side-animation .skills{
-    animation: animate 1s 1s both;
+    animation: animate 1s 0.5s both;
 }
 
 .container-luis.side-animation .contact a{
-    animation: animate 1s 1.2s both;
+    animation: animate 1s 0.6s both;
 }
 
 @keyframes animate {
