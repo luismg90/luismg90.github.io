@@ -176,8 +176,3 @@ header nav .under-animation:hover:after{
 
 /*Media Queries*/
 
-@media screen and (max-width: 576px){
-    .f-partner .f-campos .btn-cont{
-        width: 40%;
-    }
-}
