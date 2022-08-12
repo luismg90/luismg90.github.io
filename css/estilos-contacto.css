@@ -176,3 +176,22 @@ header nav .under-animation:hover:after{
 
 /*Media Queries*/
 
+@media screen and (max-width: 300px){
+    header nav{
+        flex-wrap: wrap;
+    }
+    .f-partner{
+        flex-wrap: wrap;
+    }
+    .f-campos{
+        width: 100%;
+        margin: 20px;
+    }
+    .f-partner .f-imagen{
+        width: 100%;
+        margin: 20px;
+    }
+    .f-partner .f-campos .btn-cont{
+        width: 50%;
+    }
+}

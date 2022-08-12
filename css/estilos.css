@@ -1300,6 +1300,32 @@ footer .f-privacy{
     }
 }
 
+@media screen and (max-width: 300px){
+
+    header .hero{
+        padding-bottom: 400px;
+    }
+    a.menu-responsive{
+        top: -1126px;
+    }
+    header .hero #hero-text .btn-dev{
+        width: 61%;
+    }
+    header .hero .dev-location{
+        margin: 29px;
+    }
+    main .container-luis .contact{
+        flex-wrap: wrap;
+    }
+    section.portfolio .wrapper-portfolio .examples{
+        grid-template-columns: 1fr 25px 1fr 1fr 1fr;
+    }
+    section.portfolio .wrapper-portfolio .examples .travel{
+        width: 130px;
+    }
+}
+
+
 
 
 
