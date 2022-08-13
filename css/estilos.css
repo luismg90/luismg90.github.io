@@ -1131,6 +1131,94 @@ footer .f-privacy{
 
 }
 
+@media screen and (max-width: 415px){
+    header .hero{
+        padding-bottom: 280px;
+    }
+
+    header .hero #hero-text .btn-dev{
+        width: 45%;
+    }
+
+    a.menu-responsive{
+        top: -909px;
+        right: 109px;
+    }
+
+    header .hero .dev-location .dev-nav{
+        width: 45%;
+    }
+
+    header .hero .dev-location .dev-nav a{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    main.descripcion .cuadro-experiencia{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    main.descripcion .cuadro-experiencia .col-exp:first-child{
+        width: 100%;
+    }
+    main.descripcion .cuadro-experiencia .col-exp{
+        width: 100%;
+    }
+    main.descripcion .cuadro-experiencia .col-exp h2{
+        font-size: 25px;
+    }
+
+    main .container-luis #assets{
+        flex-wrap: wrap;
+    }
+    main .container-luis #assets .asset-point{
+        width: 100%;
+        text-align: center;
+    }
+
+    main .container-luis p{
+        font-size: 22px;
+    }
+    main .container-luis h2{
+        font-size: 22px;
+    }
+    main .skill-name{
+        font-size: 16px;
+    }
+    section.portfolio .wrapper-portfolio .examples{
+        grid-template-columns: 1fr 100px 1fr 1fr 1fr;
+        grid-template-rows: 1fr 100px 1fr 1fr;
+    }
+    section.portfolio .wrapper-portfolio .examples .text{
+        text-align: center;
+    }
+    section.portfolio .wrapper-portfolio .examples .text a{
+        font-size: 25px;
+    }
+
+    .imagen-servicio{
+        height: 250px;
+    }
+    section .servicios-luis .contenedor-servicios .servicio h3{
+        max-height: 130px;
+        font-weight: 400;
+    }
+    footer .f-main{
+        margin: 15px;
+    }
+    footer .f-social .btn-social{
+        font-size: 40px;
+    }
+    footer .f-social h2{
+        font-size: 30px;
+    }
+    footer .f-privacy{
+        text-align: center;
+    }
+}
+
+
 @media screen and (max-width: 390px){
     header .hero{
         padding-bottom: 280px;
